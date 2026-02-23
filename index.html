@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FitNeon Prime V2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background: radial-gradient(circle at top, #0b0b19, #000);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    animation: fadeDown 1s ease;
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #b400ff, #00eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.teste-20 {
+    right: 1200;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+  }
+  .hero {
+    text-align: center;
+    padding: 120px 20px 90px;
+    animation: fadeUp 1.2s ease;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00eaff, #b400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0,234,255,0.4);
+    animation: neonPulse 3s infinite alternate;
+  }
+  .hero p {
+    margin-top: 18px;
+    font-size: 1.2rem;
+    opacity: .85;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #b400ff, #00eaff);
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    box-shadow: 0 0 15px rgba(0,234,255,0.5);
+  }
+  .btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(180,0,255,0.7);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 70px 60px;
+  }
+  .card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 18px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: .3s;
+    animation: fadeUp 1.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 20px rgba(0,234,255,0.4);
+    border-color: #00eaff;
+  }
+  footer {
+    text-align: center;
+    padding: 40px;
+    opacity: .7;
+  }
+  @keyframes neonPulse {
+    0% { text-shadow: 0 0 10px #00eaff; }
+    100% { text-shadow: 0 0 25px #b400ff; }
+  }
+  @keyframes fadeUp {
+    from {opacity:0; transform: translateY(35px);} to {opacity:1; transform: translateY(0);}
+  }
+  @keyframes fadeDown {
+    from {opacity:0; transform: translateY(-20px);} to {opacity:1; transform: translateY(0);}
+  }
+  .img-logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 47%;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">FitNeon Prime</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Planos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Seu Corpo. Sua Energia. Seu Futuro.</h1>
+    <p>Treinos inteligentes, nutrição de alta performance e tecnologia de outro nível.</p>
+    <a href="index3.html" class="btn">Começar Agora</a>
+  </section>
+  <section class="cards">
+    <div class="card">💪 Treino Personalizado</div>
+    <div class="card">🥗 Plano Nutricional</div>
+    <div class="card">⚡ Acompanhamento Online</div>
+    <div class="card">🎧 Suporte com Coach</div>
+  </section>
+    <section class="about">
+    <h2 style="text-align:center;margin-bottom:20px;font-size:2rem;font-weight:800;">Conteúdos do Projeto</h2>
+    <p style="text-align:center;opacity:.8;margin-bottom:35px;">Clique abaixo para acessar a página com todas as explicações completas.</p>
+    <div style="text-align:center;">
+      <a href="index2.html" class="btn">Acessar Conteúdo Completo</a>
+    </div>
+  </section>
+  <footer>FitNeon © 2025 — Projeto Acadêmico<br>Desenvolvido pelo Miguel</footer>
+  <img src="img/ChatGPT_Image_12_de_set._de_2025,_15_16_52.png" class="img-logo" alt="">
+  <p class="teste-20">teste</p>
+</body>
+</html>

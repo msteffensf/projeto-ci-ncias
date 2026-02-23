@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Comece Agora - FitNeon</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+  body{
+    background:radial-gradient(circle,#02010a,#000);
+    color:#fff;
+    padding:50px 20px;
+    text-align:center;
+  }
+  h1{
+    font-size:2.8rem;
+    font-weight:800;
+    background:linear-gradient(90deg,#00eaff,#b400ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 0 15px rgba(0,234,255,0.4);
+    margin-bottom:10px;
+  }
+  p{
+    font-size:1.2rem;
+    opacity:.85;
+    margin-bottom:25px;
+  }
+  .form-box{
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    background:rgba(255,255,255,0.06);
+    padding:25px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    animation:fadeUp 1s;
+  }
+  input,select{
+    width:100%;
+    padding:13px;
+    background:rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.1);
+    color:#fff;
+    border-radius:10px;
+    margin-top:15px;
+  }
+  .btn{
+    margin-top:25px;
+    display:block;
+    width:100%;
+    padding:14px;
+    font-weight:700;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(90deg,#b400ff,#00eaff);
+    cursor:pointer;
+    color:#fff;
+    font-size:1.1rem;
+    box-shadow:0 0 15px rgba(0,234,255,0.4);
+    transition:.3s;
+  }
+  .btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(180,0,255,0.7);
+  }
+  a{
+    color:#00eaff;
+    display:block;
+    margin-top:25px;
+    text-decoration:none;
+  }
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}
+  }
+</style>
+</head>
+<body>
+  <h1>Comece Sua Jornada</h1>
+  <p>Preencha seus dados para receber seu plano inicial personalizado</p>
+
+  <div class="form-box">
+    <input type="text" placeholder="Seu nome" required>
+    <input type="number" placeholder="Idade" required>
+    <input type="number" placeholder="Peso (kg)" required>
+    <input type="number" placeholder="Altura (cm)" required>
+
+    <select>
+      <option>Objetivo: Ganho de Massa</option>
+      <option>Objetivo: Emagrecimento</option>
+      <option>Objetivo: Condicionamento</option>
+      <option>Objetivo: Saúde Geral</option>
+    </select>
+
+    <button class="btn">Enviar  Começar</button>
+  </div>
+
+  <a href="index.html">⬅️ Voltar para página inicial</a>
+  <h1>Somente para decoração não ira funcionar</h1>
+</body>
+</html>
